@@ -28,7 +28,7 @@
   let isTabActive = true;
 
   // Random Background Image
-  let backgroundImages = ["BG_1.jpg", "BG_2.jpg", " BG_3.jpg"];
+  let backgroundImages = ["BG_1.jpg", "BG_2.jpg", "BG_3.jpg"];
   let randomImage;
 
   // Controller stuff
@@ -577,22 +577,25 @@
 
 <section class="section background-image" style={randomImage ? `background-image: url('${base}/${randomImage}');` : ""}>
   <div class="level">
-    <div class="level-item" style="position: absolute;">
-      <a class="icon is-medium" href="/" rel="external" title="Home">
-        <i class="fa fa-home fa-lg" />
-      </a>
+    <div class="level-left">
+      <div class="level-item" style="justify-content: normal">
+        <a class="icon is-medium" href="/" rel="external" title="Home">
+          <i class="fa fa-home fa-lg" />
+        </a>
+      </div>
     </div>
-    <div class="level-item">
-      <h1 class="title is-1 has-text-centered">
-        <span class="icon is-medium">
-          <img src="{base}/logo.png" alt="superglidetrainer logo" style="transform: scaleX(-1);" />
-        </span>
-        {siteTitle}
-        <span class="icon is-medium">
-          <img src="{base}/logo.png" alt="superglidetrainer logo" />
-        </span>
-      </h1>
-    </div>
+  </div>
+  <div class="level-item" style="margin-bottom: 0.75rem;">
+    <h1 class="title is-1 has-text-centered">
+      Apex Legends <br />
+      <span class="icon is-medium">
+        <img src="{base}/logo.png" alt="superglidetrainer logo" style="transform: scaleX(-1);" />
+      </span>
+      Superglide Trainer
+      <span class="icon is-medium">
+        <img src="{base}/logo.png" alt="superglidetrainer logo" />
+      </span>
+    </h1>
   </div>
   <div class="container">
     <div
