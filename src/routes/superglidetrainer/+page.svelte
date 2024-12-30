@@ -230,7 +230,7 @@
     }
 
     return `${buttonText}&nbsp;&nbsp;
-                <span class="icon">
+                <span class="icon" style="margin-left: 0px">
                     <i class="${icon_class}"></i>
                 </span>`;
   };
