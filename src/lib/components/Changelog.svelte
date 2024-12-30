@@ -24,7 +24,7 @@
                     <span>{log.date}</span>
                   </div>
                 </th>
-                <td>{log.note}</td>
+                <td>{@html log.note}</td>
               </tr>
             {/each}
           </tbody>
