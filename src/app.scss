@@ -193,9 +193,8 @@ div.faq-content {
 
 section.background-image {
   // background-image is set dynamically inline
-  background-size: cover;
   background-position: center center;
-  background-size: auto auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
