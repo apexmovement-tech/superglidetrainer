@@ -28,7 +28,6 @@
   let isTabActive = true;
 
   // Random Background Image
-  let backgroundImages = ["BG_1.jpg", "BG_2.jpg", "BG_3.jpg"];
   let randomImage;
 
   // Controller stuff
@@ -188,8 +187,7 @@
     window.addEventListener("visibilitychange", pauseWhenInactive);
 
     // Random Background Image
-    let randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    randomImage = backgroundImages[randomIndex];
+    randomImage = `${Math.floor(Math.random() * 10) + 1}.webp`;
 
     // load settings from localstorage
     const content = localStorage.getItem("content");
@@ -575,7 +573,7 @@
   }
 </script>
 
-<section class="section background-image" style={randomImage ? `background-image: url('${base}/${randomImage}');` : ""}>
+<section class="section background-image" style={randomImage ? `background-image: url('${base}/backgrounds/${randomImage}');` : ""}>
   <div class="level">
     <div class="level-left">
       <div class="level-item" style="justify-content: normal">
