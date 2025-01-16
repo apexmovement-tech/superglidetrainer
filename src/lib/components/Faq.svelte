@@ -151,6 +151,7 @@
           <p>
             <iframe
               class="has-ratio"
+              style="max-width: 100%;"
               width="560"
               height="315"
               src="https://www.youtube-nocookie.com/embed/Cwa0qbDx2dA?start=423"
