@@ -35,6 +35,10 @@
     {
       "date": "01.12.2023",
       "note": "Improvements to color-contrast. Moved tips and FAQ into the middle. New Home Button. New Changelog. New graph in \"Show all stats\". Small text tweaks."
+    },
+    {
+      "date": "30.12.2024",
+      "note": "Preperations for the new thing&trade;: color adjustments, library updates, backend changes"
     }
   ]
 }

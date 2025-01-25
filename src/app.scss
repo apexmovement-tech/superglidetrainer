@@ -18,6 +18,7 @@ $custom-colors: (
 
 section.section {
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 button.setting-button {
@@ -44,7 +45,7 @@ button.setting-button {
 }
 
 .darker-bg {
-  background-color: $background !important;
+  background-color: #1c2121 !important;
 }
 
 /* Import only what you need from Bulma */
@@ -192,9 +193,8 @@ div.faq-content {
 
 section.background-image {
   // background-image is set dynamically inline
-  background-size: cover;
   background-position: center center;
-  background-size: auto auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

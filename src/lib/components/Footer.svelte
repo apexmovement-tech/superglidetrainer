@@ -23,7 +23,7 @@
       <!-- svelte-ignore a11y-missing-attribute -->
       <a on:click={toggleChgangelogModal}> Changelog </a>
       <span class="icon"> <i class="fab fa-github" /></span>
-      <a href="https://github.com/muckelba/superglidetrainer"> Sourcecode </a>
+      <a href="https://github.com/apexmovement-tech/superglidetrainer"> Sourcecode </a>
       <span class="icon"> <i class="fab fa-reddit" /></span>
       <a href="https://reddit.com/r/apexrollouts">Subreddit</a>
       <span class="icon"> <i class="fab fa-discord" /></span>

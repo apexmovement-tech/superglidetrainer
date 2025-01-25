@@ -46,12 +46,12 @@ jobs:
 
     steps:
       - name: SSH Deploy
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
-            cd ${{ secrets.PATH }}-${{ github.ref_name }}
+            cd ${{ secrets.PATH }}_${{ github.ref_name }}
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin
             docker compose pull && docker compose up -d
