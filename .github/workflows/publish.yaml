@@ -60,4 +60,4 @@ jobs:
           script: |
             cd ${{ secrets.PATH }}_${{ github.ref_name }}
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin
-            docker compose pull && docker compose up -d
+            docker compose pull superglidetrainer && docker compose up -d
