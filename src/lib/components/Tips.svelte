@@ -15,7 +15,7 @@
 </script>
 
 <div class="card container">
-  <a class="card-header darker-bg" href="/wiki/tech/General%20Tech%3EMantle%20Tech%3ESuperglide%3ESuperglide%20article#Superglide">
+  <a class="card-header darker-bg" href="/wiki/tech/General%20Tech%3EMantle%20Tech%3ESuperglide%3ESuperglide%20article#Superglide" rel="external">
     <p class="card-header-title title is-3 is-centered has-text-centered">
       <span class="icon is-large has-text-primary pr-2">
         <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" class="svg-primary" viewBox="0 0 4534.49 2217.4">{@html svg}</svg>
