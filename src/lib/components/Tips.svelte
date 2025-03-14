@@ -1,107 +1,29 @@
 <script>
-  let tipsHidden = true;
-  function toggleHidden() {
-    tipsHidden = !tipsHidden;
-  }
+  let svg = `<path
+            d="M476.27,1626.21c-2.67-4.36-4.47-7.13-6.12-10q-334-578.37-667.9-1156.74Q-245.94,376-294,292.43-417.5,78.79-541.27-134.7c-4.83-8.31-4.61-14.09.21-22.39q119.28-205.7,237.55-412c6.44-11.25,12.87-15.53,26.07-15.32,56.31.89,112.63.57,169,.16,8.17-.06,12.31,2.77,16.22,9.58Q293.41,96.76,679.39,768q71,123.43,142.1,246.74c3.89,6.71,3.74,11.39-.11,18Q651.33,1325,481.67,1617.58C480.19,1620.14,478.54,1622.6,476.27,1626.21Z"
+            transform="translate(1391.93 587.93)"
+          /><path
+            d="M912.91,6.79,1259-587.93q517.61,895.05,1032.44,1789.79c-15.54,26.93-30.85,53.45-46.15,80q-96.34,167-192.5,334.17c-4.36,7.6-8.92,10.54-17.88,10.47q-90-.68-180,0c-8.5.06-12.94-2.79-17.09-10Q1455,949.78,1071.71,283.32,995,149.94,918.34,16.55C916.52,13.39,914.79,10.18,912.91,6.79Z"
+            transform="translate(1391.93 587.93)"
+          /><path
+            d="M3142.56-271.49Q2882.48,179.07,2623,628.6a15.37,15.37,0,0,1-2,.2,1.37,1.37,0,0,1-.87-.27,16.36,16.36,0,0,1-1.8-2.36Q2446.69,330.21,2275,34c1.86-3.4,3.54-6.62,5.34-9.76q172.74-300.54,345.36-601.16c4.11-7.16,8.44-10.21,17-10.15,60.31.41,120.62.32,180.94.08,7.19,0,12.33,1.89,17.47,7.16Q2988.53-429,3136.26-278.51C3138.33-276.4,3140.21-274.11,3142.56-271.49Z"
+            transform="translate(1391.93 587.93)"
+          /><path
+            d="M-1060.84,1629.47l-331.09-312.78,518.62-897.86,247.45,424.28-193.23,334.71h386.35a11,11,0,0,1,.89,2,1.4,1.4,0,0,1-.3.94,16.09,16.09,0,0,1-2.18,2Z"
+            transform="translate(1391.93 587.93)"
+          />`;
 </script>
 
-<div class="card {tipsHidden ? 'container' : ''}">
-  <!-- svelte-ignore a11y-click-events-have-key-events -->
-  <!-- svelte-ignore a11y-missing-attribute -->
-  <!-- svelte-ignore a11y-no-static-element-interactions -->
-  <a class="card-header darker-bg" on:click={toggleHidden}>
-    <p class="card-header-title title is-3 is-centered">
-      <span class="icon is-large has-text-primary">
-        <i class="fa fa-angle-{tipsHidden ? 'down' : 'up'} " />
+<div class="card container">
+  <a class="card-header darker-bg" href="/wiki/tech/General%20Tech%3EMantle%20Tech%3ESuperglide%3ESuperglide%20article#Superglide">
+    <p class="card-header-title title is-3 is-centered has-text-centered">
+      <span class="icon is-large has-text-primary pr-2">
+        <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" class="svg-primary" viewBox="0 0 4534.49 2217.4">{@html svg}</svg>
       </span>
-      Helpful tips to get better
-      <span class="icon is-large has-text-primary">
-        <i class="fa fa-angle-{tipsHidden ? 'down' : 'up'}" />
+      Helpful Tips from the Movement Wiki
+      <span class="icon is-large has-text-primary pl-2">
+        <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" class="svg-primary" viewBox="0 0 4534.49 2217.4">{@html svg}</svg>
       </span>
     </p>
   </a>
-  <div class="card-content {tipsHidden ? 'is-hidden' : ''} darker-bg">
-    <div class="content">
-      <h5 class="title is-4">There are two timings. The input timing and the mantle timing</h5>
-      <h5 class="title is-4 is-underlined">Get better at hitting the Jump -> Crouch timing</h5>
-      <strong>Mouse and keyboard:</strong>
-      <ol type="1">
-        <li>
-          It's common to put your crouch on a button next to your jump input, so you can press them both with 1 finger at the same time. <code>C</code
-          >,<code>V</code>
-          or <code>B</code> with spacebar for example.
-        </li>
-        <li>
-          The simplest way to alter the delay and which button you hit first is to manually correct it by holding your thumb in a different way. This
-          might feel strange at first but often this can already make a 1 -3 frame difference. And with practice you can get consistent.
-        </li>
-        <li>
-          Different keycap profiles will naturally alter which button you hit first. So flipping over your crouch keycap can help. As well as getting
-          different keycaps. Or taping stuff to your existing keycaps.
-        </li>
-        <li>Some folks have seen success by jumping or crouching with Scrollwheel.</li>
-        <li>
-          Your keyboard switches will also alter when a key is activated. Tactile switches like MX blues make it much easier to feel the activation
-          point, and putting different switches on your <code>C</code>,<code>V</code>
-          and <code>B</code> then on Spacebar might help with activation as well.
-        </li>
-        <li>
-          The ultimate hardware change would be to get a new keyboard. Either to get away from a low polling rate & weird keystroke scan issues which
-          introduce further randomness or make it outright impossible. Or to get a keyboard with activation points you can change. Like from Wooting
-          or the Apex Pro Mini from Steelseries. Potential keyboard scan issues and how to resolve them without getting new hardware are further
-          explained in the FAQ below.
-        </li>
-      </ol>
-      <strong>Controller:</strong> <br />
-      For controller the only tip is to put jump and crouch on two buttons you can hit with the same finger. Like A+B, X+Square or two paddles.
-    </div>
-    <div class="content">
-      <h5 class="title is-4 is-underlined">Get better at timing the Superglide during the mantle</h5>
-      <div class="subtitle is-6">
-        You need to do the Superglide Inputs in the last 150ms of a mantle. For a start it can help to practice this on the same ledge over and over
-        till you are consistent with that. It also helps to practice with the same legend. Since they have different body heights it's easier to get
-        used to how a mantle looks on the same legend. Beyond that there are 5 cues you can use to practice the mantle timing.
-        <ol type="1">
-          <li>
-            <strong>Jump</strong><br />Try to jump immediately out of a mantle. Don't even bother with a crouch input for now. The first few frames
-            where you jump is the Superglide window. If you jump too early you simply won't jump. So start by deliberately jumping too late and then
-            jump earlier and earlier till you are right on the edge where it shifts into not jumping at all. That method of figuring out the mantle
-            timing works on every ledge. But there's also
-            <a href="https://youtu.be/_cP1YO5Idts?si=8rQNoywHdg3kr41h&t=473" target="_blank">this spot</a>. That even shows you if you jumped too
-            late. This is the most precise method to experience the superglide mantle timing for the first time.
-          </li>
-          <li>
-            <strong>Audio cue</strong><br />There is a distinct hand grab sound the Legend does at the end of a mantle. It sounds like
-            <a href="https://youtu.be/_cP1YO5Idts?si=GQMXaW4bvzo0Y_tQ&t=497" target="_blank">this</a>. That sound plays at around 0.3 seconds before
-            the mantle ends. So if you time your jump crouch combo right after that sound you hit the correct window. But how that timing feels
-            between your headset or speaker latency and hand-ear/eye coordination might be different. So it is helpful to use the hand sound as a cue
-            but to you it might feel like you have to time your inputs with it instead of after.
-          </li>
-          <li>
-            <strong>Camera shake</strong><br />Your view will shake during a mantle and then come to a stop. It's easiest to see this on the upper
-            border of <a href="https://youtu.be/_cP1YO5Idts?si=43fuwGrNpqHAvztb&t=534" target="_blank">your screen</a>. That stop happens just a few
-            frames before the Superglide window closes. So doing your input together with the wiggle stop is a good ballpark to aim for. Same as with
-            the audio cue, to you it might feel correct to do it slightly before or after.
-          </li>
-          <li>
-            <strong>Camera turn</strong><br />If you
-            <a href="https://youtu.be/_cP1YO5Idts?si=mcBShizWXZAKC6KC&t=554" target="_blank">turn your view</a> during the mantle it will stop at about
-            80 degrees and then continue after the mantle is finished. Time your jump crouch combo slightly before that. This is not to say to actually
-            do a Superglide using the turn, but to use it as a tool to get a feeling for the end of the mantle.
-          </li>
-          <li>
-            <strong>Animations</strong><br />If you have learned to superglide and just keep playing you will start to develop an intuitive
-            understanding of how your heirlooms and weapons move around during different mantles. Helping with the feeling of the mantle timing.
-          </li>
-        </ol>
-        <p>All the tips for the jump crouch combo and mantle timing are only good for the initial practice, to get you used to Supergliding.</p>
-        <p>Ingame it makes much more sense to go for feeling.</p>
-        <p>
-          And like with practicing every other Movement-Tech. Play Mixtape. The density of fights to practice in is 5-10x higher in mixtape then in
-          BR. And if you don't have a teammate you can disappoint, because you just lost them the game with your Superglide attempt, your mind is free
-          to care about movement, without pressure.
-        </p>
-      </div>
-    </div>
-  </div>
 </div>
